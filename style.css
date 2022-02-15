@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho-imagem {
+    height: 70px;
+}
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho-menu-item {
+    text-decoration: none;
+    color: white;
+    font-family: 'exo', sans-serif;
+    font-weight: 500;
+}
+
+.cabecalho-menu-item:hover {
+    color: yellow;
+}
+
+.conteudo {
+    display: grid;
+    height: 800px;
+    background-image: url(./images/crianca-feliz.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    max-height: 100%;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40%;
+    margin-right: 10%;
+}
+
+.conteudo-principal-titulo {
+    font-family: 'exo', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+
+
+.conteudo-principal-subtitulo {
+    font-family: 'exo', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+.conteudo-principal div p {
+    font-family: 'exo', sans-serif;
+    color: rgb(255, 0, 100);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cognito {
+    display: block;
+    height: 400px !important;
+    overflow: hidden !important;
+    float: left;
+}
+
+.cog-form__content {
+    background-color: black !important;
+}
+
+.cog-heading {
+    color: white !important;
+    font-family: 'exo',sans-serif !important;
+    font-size: 20px !important;
+}
+
+.cog-label {
+    color: white !important;
+    font-family: 'exo',sans-serif !important;
+}
+
+button {
+    background-color: rgb(245, 145, 0) !important;
+    font-family: 'exo',sans-serif !important;
+}
+
+.rodape {
+    background-color: black;  
+    display: flex !important;
+    flex-direction: column !important;
+  
+    align-content: center !important;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.rodape-texto {
+    display: block;
+    margin: 0 auto;
+    font-family: 'exo', sans-serif;
+    font-size: 12px;
+}
+
+.rodape-texto {
+    color: white;
+}
+
+@media (max-width: 920px) {
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .conteudo-principal-titulo {
+        font-size: 30px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 20px;
+    }
+
+    .conteudo-principal div p {
+        font-size: 15px;
+    }
+
+    .cognito {
+        height: auto !important;
+        padding: 20px;
+        margin-right: 5%;
+
+    }
+
+    .cog-branding .cog-branding--minimal {
+        visibility: hidden !important;
+    }
+}
+
+@media (max-width: 324px) {
+    .cabecalho-menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .conteudo-principal-escrito {
+        gap: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 227px) {
+    .conteudo-principal-titulo {
+        font-size: 20px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 15px;
+    }
+
+    .conteudo-principal div p {
+        font-size: 15px;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+    }
+}
