@@ -223,12 +223,40 @@ button {
         margin-top: 10%;
         padding: 20px;
     }
+
+    .conteudo-principal-titulo {
+        font-size: 22px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 20px;
+    }
 }
 
 
 
 @media (max-width: 520px) {
+   .cabecalho-menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 10px;
+    }
 
+    .conteudo-principal-escrito {
+        gap: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .conteudo {
+        background-position: center left;
+        height: 500px;
+    }
+
+    .conteudo-sobrenos-principal-escrito p {
+        font-size: 12px;
+    }
     .conteudo-sobrenos-principal-escrito {
         height: 330px;
     }
@@ -274,27 +302,7 @@ button {
 }
 
 @media (max-width: 361px) {
-    .cabecalho-menu {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        gap: 10px;
-    }
-
-    .conteudo-principal-escrito {
-        gap: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .conteudo {
-        background-position: center left;
-        height: 500px;
-    }
-
-    .conteudo-sobrenos-principal-escrito p {
-        font-size: 12px;
-    }
+ 
 
 }
 
