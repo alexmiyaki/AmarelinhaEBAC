@@ -38,17 +38,40 @@
 
 .conteudo {
     display: grid;
+    position: relative;
     height: 800px;
+    max-height: auto;
+}
+
+ .conteudo::before {
+     content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-image: url(./images/crianca-feliz.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+    opacity: 0.65;
     max-height: auto;
-}
+ }
 
 .conteudo-sobrenos {
     position: relative;
+    height: 600px;
+}
+
+.conteudo-sobrenos::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     background-image: url(./images/projeto-amarelinhaPattern.jpg);
+    opacity: .4;
     background-size: cover;
     height: 600px;
 }
@@ -61,6 +84,7 @@
 }
 
 .conteudo-principal-escrito {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -92,23 +116,25 @@
 
 
 .conteudo-principal-titulo {
+    position: relative;
     font-family: 'exo', sans-serif;
     font-weight: 500;
     font-size: 40px;
-    color: white;
+    color: black;
 }
 
 
 .conteudo-principal-subtitulo {
+    position: relative;
     font-family: 'exo', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 
 .conteudo-principal div p {
     font-family: 'exo', sans-serif;
-    color: rgb(255, 0, 100);
+    color: black;
     font-weight: 400;
     font-size: 20px;
 }
