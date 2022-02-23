@@ -71,7 +71,7 @@
     bottom: 0px;
     right: 0px;
     background-image: url(./images/projeto-amarelinhaPattern.jpg);
-    opacity: .4;
+    opacity: .20;
     background-size: cover;
     height: 600px;
 }
@@ -99,14 +99,14 @@
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, .8);
+
     height: 300px;
     border-radius: 20px;
 }
 
 .conteudo-sobrenos-principal-escrito p {
     font-family: 'exo', sans-serif;
-    color: rgb(80, 180, 215);
+    color: black;
     font-size: 20px;
     text-align: center;
     margin-top: 40px;
